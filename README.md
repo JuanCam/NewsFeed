@@ -4,6 +4,6 @@ NewsApp is an app to view the most recent news in the world. You can deploy a li
 
 ## Build & development
 - First of all you need to install node.js and npm.
-- The you have to install bower package manager.
+- Also you have to install bower package manager.
 - Then you must run `npm install` and `bower install` in this folder (This may take a while).
 - Finally run `grunt serve` for preview.
