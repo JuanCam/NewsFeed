@@ -1,0 +1,26 @@
+<div class="col-md-12 row top-section">
+    <div class="main-news-panel panel panel-default">
+        <div class="panel-body header-content">
+            <h4 class="news-header-title animated" ng-class="titleClass">{{currentNews.title}}</h4>
+            <div ng-click="toggleFeed()" class="options-container" ng-class="{active:bootstrapIcon}">
+                <span class="upper-dash glyphicon glyphicon-minus" ng-class="{active:bootstrapIcon}"></span>
+                <span class="lower-dash glyphicon glyphicon-minus" ng-class="{active:bootstrapIcon}"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-12 row">
+    <div data-feed class="directive" classnews="classNews" titleclass="titleClass" allnews="AllNews" currentnews="currentNews" hideallnews="hideAllNews()"></div>
+    <div class="intro">
+        <h2>News Feed App</h2>
+        <p class="lead">This is the news feed app. By clicking in the left upper icon, you can view all the most recent news today and if you click any of them you can read them in detail.</p>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your email">
+                <button class="btn btn-primary">Suscribe</button>
+            </div>
+        </form>
+        <ins>*suscribe and recieve more info and news.</ins>
+    </div>
+</div>

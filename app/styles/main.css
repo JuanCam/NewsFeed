@@ -1,0 +1,198 @@
+body {
+    padding: 0;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f2f2f2;
+}
+
+
+/* Custom page header */
+
+.main-news-panel {
+    background: #ff4d4d;
+    margin-bottom: 7px;
+    color: #FFF;
+}
+
+.header-content {
+    display: flex;
+}
+
+
+/* Custom page footer */
+
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .top-section {
+        width: 768px;
+    }
+    /* Remove the padding we set earlier */
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    .news-block.active {
+        width: 738px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /*IPhone 6*/
+    .news-block.active {
+        width: 100%;
+    }
+    .main-news-panel {
+        width: 100%;
+    }
+}
+
+
+/*Main section*/
+
+.top-section {
+    padding: 0;
+}
+
+.small-img {
+    width: 52px;
+}
+
+.intro {
+    position: absolute;
+}
+
+.news-header-title {
+    position: absolute;
+    margin: 0;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*News container*/
+
+.news-block {
+    width: 0px;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.7s;
+    float: left;
+    padding: 0;
+    position: relative;
+    background-color: #f2f2f2;
+    margin: 15px 0px 45px 0px;
+}
+
+.news-block div {
+    display: block;
+}
+
+
+/*News box*/
+
+.news-box.active {
+    width: 100%;
+    padding: 12px 12px 12px 12px;
+}
+
+.news-box {
+    width: 0;
+    transition: 0.7s;
+    overflow-y: hidden;
+    padding: 0;
+    background-color: #fff;
+    margin: 10px 0px 10px 0px;
+    height: 76px;
+}
+
+.news-box div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news-box img {
+    cursor: pointer;
+}
+
+.news-box strong {
+    color: #595959;
+}
+
+.single-news-title {
+    margin: 0px 0px 8px 0px;
+}
+
+
+/*News details*/
+
+.news-datail {
+    transition: 0.8s ease;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.news-datail.active {
+    padding: 7px;
+    max-height: 400px;
+}
+
+
+/*Close/Open button*/
+
+.upper-dash,
+.lower-dash {
+    transition: 1.7s ease;
+    display: block;
+    font-size: 22px;
+    width: 22px;
+    height: 11px;
+}
+
+.options-container {
+    transition: 1.7s ease;
+    width: 16px;
+}
+
+.options-container.active {
+    margin-left: 95%;
+}
+
+.options-container:focus {
+    outline-width: 0;
+}
+
+.upper-dash.active {
+    transform: rotate(45deg);
+}
+
+.lower-dash.active {
+    transform: translate3d(-10px, -10px, 0) rotate(-45deg);
+}

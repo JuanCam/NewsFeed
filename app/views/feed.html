@@ -1,0 +1,21 @@
+<div class="news-block" ng-class="{active:classnews}">
+    <div ng-repeat="news in allnews" class="col-md-12">
+        <div class="news-box col-md-12 animated">
+            <div class="col-md-2 col-xs-3">
+                <img src="{{news.image}}" ng-click="showNew($event,news.id)" alt="small news image" class="small-img img-circle">
+            </div>
+            <div class="col-md-10 col-xs-9">
+                <strong>{{news.title}}</strong>
+            </div>
+        </div>
+        <div class="news-datail animated" data-id="{{news.id}}">
+            <div class="col-md-4 col-xs-4">
+                <img src="{{news.image}}" alt="news image" class="img-rounded img-responsive">
+            </div>
+            <div class="col-md-8 col-xs-8">
+                <h4 class="single-news-title">{{news.title}}</h4>
+                <p>{{news.content}}</p>
+            </div>
+        </div>
+    </div>
+</div>
